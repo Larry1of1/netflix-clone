@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navigation CSS */
+
+.navbar-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar {
+    padding: 24px 4%;
+}
+
+.netflix-logo {
+    color: #e50914;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+
+.netflix-logo:hover {
+    color: #e50914;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.language-select {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border: 1px solid #777;
+    border-radius: 4px;
+    padding: 7px 12px;
+    font-size: 0.95rem;
+}
+
+.sign-in-btn {
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.sign-in-btn:hover {
+    background-color: #c11119;
+    color: #fff;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    min-height: 100vh;
+    position: relative;
+
+    background-image: url("../Images/NG-en-20260803-TRIFECTA-perspective_b93c7561-e9f5-49e8-a877-cb91200dd005_small.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    /* inset: 0; */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.65);
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: 90%;
+    max-width: 950px;
+
+    margin-top: 70px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 10px;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+}
+
+.email-form input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 16px 18px;
+
+    background-color: rgba(20, 20, 20, 0.8);
+
+    border: 1px solid #777;
+    border-radius: 4px;
+
+    color: #fff;
+
+    font-size: 1rem;
+}
+
+.email-form input::placeholder {
+    color: #ccc;
+}
+
+.email-form button {
+    border: none;
+
+    background-color: #e50914;
+    color: #fff;
+
+    padding: 14px 25px;
+
+    border-radius: 4px;
+
+    font-size: 1.25rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+.email-form button:hover {
+    background-color: #c11119;
+}
+
+.arrow {
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 768px) {
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content {
+        width: 88%;
+    }
+
+    .email-form {
+        max-width: 600px;
+    }
+
+}
+
+/* Mobile Phone Responsiveness */
+
+@media (max-width: 576px) {
+
+    .hero-content {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+
+    .email-form {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .email-form input {
+        width: 100%;
+        min-height: 50px;
+    }
+
+    .email-form button {
+        width: 100%;
+        min-height: 50px;
+        font-size: 1.05rem;
+    }
+
+}
